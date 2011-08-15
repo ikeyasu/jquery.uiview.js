@@ -1,5 +1,5 @@
 (function($) {
-  var REGEXP_IFDEV = new RegExp('<!--juiview: *ifdev *-->([\n]*?.*?)*?<!--juiview: *end *-->', 'm');
+  var REGEXP_IFDEV = new RegExp('<!--uiview: *ifdev *-->([\n]*?.*?)*?<!--uiview: *end *-->', 'm');
   $.loadView = function(path, callback) {
     $.get(path, function(res) {
       if (res)
